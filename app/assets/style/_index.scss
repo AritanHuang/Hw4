@@ -147,3 +147,53 @@
         }
     }
 }
+// 聯名設計鏡框區塊
+.design {
+    background-image: url(../images/index-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: $spacer * 10;
+    padding-top: $spacer * 10;
+    margin-bottom: $spacer * 10;
+    text-align: center;
+    @include pad() {
+        background-image: url(../images/index-bg-sm.png);
+    }
+    @include mobile() {
+        padding-bottom: $spacer * 5;
+        padding-top: $spacer * 5;
+        margin-bottom: $spacer * 5;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: $spacer * 6;
+        @include mobile() {
+            font-size: 24px;
+            margin-bottom: $spacer * 3;
+        }
+    }
+    .design-item {
+        display: flex;
+        @include pad() {
+            flex-direction: column;
+            gap: 24px;
+        }
+        li {
+            background-color: #fff;
+            width: 50%;
+            @include pad() {
+                width: 100%;
+            }
+        }
+        h3 {
+            padding-top: $spacer;
+            padding-bottom: $spacer;
+            font-size: 48px;
+            font-weight: 900;
+            color: $primary;
+        }
+    }
+}
