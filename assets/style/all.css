@@ -571,6 +571,56 @@ a {
       font-weight: 900;
       color: #aa0601; }
 
+.design {
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  text-align: center; }
+  @media (max-width: 992px) {
+    .design {
+      background-image: url(../images/index-bg-sm.png); } }
+  @media (max-width: 767px) {
+    .design {
+      padding-bottom: 40px;
+      padding-top: 40px;
+      margin-bottom: 40px; } }
+  .design h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 48px; }
+    @media (max-width: 767px) {
+      .design h2 {
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .design .design-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 992px) {
+      .design .design-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 24px; } }
+    .design .design-item li {
+      background-color: #fff;
+      width: 50%; }
+      @media (max-width: 992px) {
+        .design .design-item li {
+          width: 100%; } }
+    .design .design-item h3 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 48px;
+      font-weight: 900;
+      color: #aa0601; }
+
 .faq-content {
   padding-top: 176px;
   margin-bottom: 80px; }
